@@ -3,11 +3,13 @@
   }
   
   body {
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Add this line to stack elements vertically */
+    flex-direction: column;
+    height: 100vh;  
+    max-width: 400px; 
+    margin: 0 auto;  
   }
   
   header {
@@ -18,9 +20,8 @@
   
   .item-img {
     width: 100%;
-    max-width: 500px; /* Adjust this value as needed */
-    display: block; /* Ensures the image takes up full width */
-    margin-top: 0; /* Remove default margin */
+    height: 100%;
+    object-fit: cover;
   }
   
   /* ToDO these break on certain widths */
