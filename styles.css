@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+
   body {
     margin: 0;
     padding: 0;
@@ -15,7 +16,7 @@
     width: calc(100% - 40px); /* Subtract the desired padding from the width */
     max-width: 500px;
     background-color: #FFF; /* Add a background color */
-    border: 10px solid #000;
+    border: 5px solid #000;
     border-radius: 10px;
   }
   
@@ -67,8 +68,6 @@
     margin: 0;
   }
   
-  
-
 /* MENU STYLING */
 .menu {
     display: flex;
@@ -94,6 +93,7 @@
     text-align: center;
     letter-spacing: -0.02em;
     opacity: 0.72;
+    padding-left: 10px;
   }
   
   .right-section {
@@ -154,7 +154,16 @@
     border-radius: 50px;
     margin-top: 30px;
     background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
   }
+
+.add-to-order:hover {
+    background-color: #DEDEDE;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Add any additional styles you want for the hover effect */
+}
   
   .menu-line {
     border-bottom: 1px solid #ccc;
@@ -182,6 +191,14 @@ h2{
     color: whitesmoke;
     border: none;
     font-size: 20px;
+    cursor: pointer;
+}
+
+#complete-order-btn:hover {
+    color: #000000;
+    background: #7e8ce0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Add any additional styles you want for the hover effect */
 }
 
 #order-list {
@@ -212,6 +229,12 @@ h2{
     line-height: 17px;
     color: #BBBBBB;
     background: none;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    color: #000000;
+    /* Add any additional styles you want for the hover effect */
 }
 
 .total-price {
@@ -226,6 +249,7 @@ h2{
     padding-top: 20px; /* Add padding-top instead of margin-top */
     margin-bottom: 30px;
     text-align: center;
+
   }
   
  .item-price{
@@ -236,6 +260,7 @@ h2{
     line-height: 24px;
     float: right;
     color: #0E0E0E;
+    margin-right: 15px;
   }
 
 
@@ -307,7 +332,16 @@ h2{
     background: #424f96;
     border-radius: 3.88991px;
     color: white;
+    cursor: pointer;
   }
+
+.pay-button:hover {
+    color: #000000;
+    background: #7e8ce0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Add any additional styles you want for the hover effect */
+}
+
 
   /* Thank you for modal  */
 
