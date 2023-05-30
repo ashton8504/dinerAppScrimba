@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Add this line to stack elements vertically */
+  }
+  
+  header {
+    position: relative;
+    text-align: center;
+    padding-top: 40px; /* Adjust this value as needed */
+  }
+  
+  .item-img {
+    width: 100%;
+    max-width: 500px; /* Adjust this value as needed */
+    display: block; /* Ensures the image takes up full width */
+    margin-top: 0; /* Remove default margin */
+  }
+  
+  /* ToDO these break on certain widths */
+  .titleText {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    font-family: 'Smythe', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 39px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding-right: 200px;
+    padding-top: 100px;
+  }
+  
+  .titleSlogan {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    font-family: 'Smythe', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.4216px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    padding-right: 200px;
+    padding-top: 100px;
+  }
+  
+
+/* MENU STYLING */
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+  
+  .menu-inner {
+    display: flex;
+  }
+  
+  .left-section {
+    margin-right: 10px;
+  }
+  
+  .emoji {
+    font-size: 24px;
+    font-size: 60px;
+    line-height: 115px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    opacity: 0.72;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  
+  .menu-details {
+    flex-grow: 1;
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    width: 43px;
+    height: 17px;
+    left: 147px;
+    top: 241.2px;
+    font-family: 'Smythe', sans-serif;
+    font-size: 28px;
+    line-height: 17px;
+  }
+
+  .ingredients{
+    width: 358px;
+    height: 24px;
+    left: 147px;
+    top: 267px;
+    font-family: 'Smythe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #8B8B8B;
+  }
+
+  .price{
+    width: 19px;
+    height: 24px;
+    left: 146px;
+    top: 299px;
+    font-family: 'Smythe', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .add-to-order {
+    width: 30px;
+    height: 30px;
+    left: 504px;
+    top: 242px;
+    border: 1.5px solid #DEDEDE;    
+    color: #3C3C3C;
+    border-radius: 50px;
+    margin-top: 30px;
+    background-color: white;
+  }
+  
+  .menu-line {
+    border-bottom: 1px solid #ccc;
+    margin-top: 10px;
+  }
+  
