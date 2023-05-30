@@ -1,15 +1,24 @@
 * {
     box-sizing: border-box;
   }
-  
   body {
+    margin: 0;
+    padding: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 100vh;  
-    max-width: 400px; 
-    margin: 0 auto;  
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFF; /* Add a background color */
+  }
+  
+  .app-container {
+    width: calc(100% - 40px); /* Subtract the desired padding from the width */
+    max-width: 500px;
+    
+    
+    background-color: #FFF; /* Add a background color */
+    border: 10px solid #000;
+    border-radius: 10px;
   }
   
   header {
@@ -18,44 +27,48 @@
     padding-top: 40px; /* Adjust this value as needed */
   }
   
-  .item-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  header {
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    background-color: #000;
   }
   
-  /* ToDO these break on certain widths */
+  .titleImg {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    object-fit: contain; /* Adjust this property as needed */
+  }
+  
   .titleText {
     position: absolute;
     width: 100%;
-    top: 20%;
+    top: 50%;
+    transform: translateY(-50%);
     font-family: 'Smythe', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 39px;
     line-height: 24px;
-    text-align: center;
     color: #FFFFFF;
     margin: 0;
-    padding-right: 200px;
-    padding-top: 100px;
+    padding-right: 140px;
   }
   
   .titleSlogan {
     position: absolute;
     width: 100%;
-    top: 30%;
+    top: 60%;
+    transform: translateY(-50%);
     font-family: 'Smythe', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 22.4216px;
     line-height: 14px;
-    text-align: center;
+    padding-right: 140px;
     color: #FFFFFF;
     margin: 0;
-    padding-right: 200px;
-    padding-top: 100px;
   }
+  
   
 
 /* MENU STYLING */
@@ -162,11 +175,11 @@ h2{
 }
 
 #complete-order-btn{
-    width: 508px;
+    width: 100%;
     height: 60px;
     left: 46px;
     top: 1048px;
-    background: #16DB99;
+    background: #424f96;
     border-radius: 3px;
     color: whitesmoke;
     border: none;
@@ -183,17 +196,15 @@ h2{
 }
 
 .item-name {
-    width: 43px;
-    height: 17px;
-    left: 46px;
-    top: 870px;
     font-family: 'Smythe';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 17px;
     color: #000000;
-}
+    margin-top: 10px; /* Add a margin-top value to create space below the item name */
+  }
+  
 
 .remove-button{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -291,12 +302,11 @@ h2{
     font-size: 16px; /* Adjust the font size as desired */
   }
   
-
   .pay-button{
     width: 100%;
     height: 50px;
     border-style: none;
-    background: #16DB99;
+    background: #424f96;
     border-radius: 3.88991px;
     color: white;
   }
@@ -346,6 +356,16 @@ h2{
     
     #complete-order-btn {
       width: 100%;
+    }
+  }
+  
+  /* Media Query for thank you message */
+
+  @media (max-width: 767px) {
+    #thank-you-message {
+      font-family: 'Smythe';
+      font-size: 18px;
+      line-height: 24px;
     }
   }
   

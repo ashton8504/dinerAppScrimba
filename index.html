@@ -17,62 +17,65 @@
 </head>
 
 <body>
-  <div class="phone-frame">
-    <div class="content">
-      <!-- Header Section -->
-      <header>
-        <img class="item-img" src="diner.jpeg" alt="photo of a burger">
-        <div class="header-content">
-          <h1 class="titleText">Jimmy's Diner</h1>
-          <h4 class="titleSlogan">The best burgers and pizza in town</h4>
+    <div class="app-container">
+        <div class="header">
+          <!-- Header Section -->
+          <header>
+            <img src="diner.jpeg" alt="Title Image" class="titleImg">
+            <h1 class="titleText">Jimmy's Diner</h1>
+            <p class="titleSlogan">The best burgers in town</p>
+          </header>
+          
         </div>
-      </header>
-
-      <!-- Menu -->
-      <div id="menu">
-        <!-- Menu Here -->
-      </div>
-
-      <!-- Adds Menu Items -->
-      <div id="your-order" style="display: none;">
-        <h2>Your Order</h2>
-        <ul id="order-list" class="order-list"></ul>
-        <div class="order-line"></div>
-        <div class="total-price">
-          Total: $<span id="total-price-amount">0</span>
+    
+        <div class="menu-container">
+          <!-- Menu -->
+          <div id="menu">
+            <!-- Menu Here -->
+          </div>
         </div>
-        <button id="complete-order-btn">Complete Order</button>
-      </div>
-
-      <!-- Modal -->
-      <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 class="modal-header">Enter Card Details</h2>
-          <form id="order-form">
-            <div class="input-group">
-              <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+    
+        <div class="order-container">
+          <!-- Adds Menu Items -->
+          <div id="your-order" style="display: none;">
+            <h2>Your Order</h2>
+            <ul id="order-list" class="order-list"></ul>
+            <div class="order-line"></div>
+            <div class="total-price">
+              Total: $<span id="total-price-amount">0</span>
             </div>
-            <div class="input-group">
-              <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" required>
-            </div>
-            <div class="input-group">
-              <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
-            </div>
-            <button type="submit" id="pay-button" class="pay-button">Pay</button>
-          </form>
+            <button id="complete-order-btn">Complete Order</button>
+          </div>
         </div>
-      </div>
-      <div id="thank-you-modal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2 class="modal-header">Thank You!</h2>
-          <p id="thank-you-message"></p>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-header">Enter Card Details</h2>
+            <form id="order-form">
+                <div class="input-group">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-group">
+                <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" required>
+                </div>
+                <div class="input-group">
+                <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                </div>
+                <button type="submit" id="pay-button" class="pay-button">Pay</button>
+            </form>
+            </div>
         </div>
-      </div>
-      
+        <div id="thank-you-modal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-header">Thank You!</h2>
+            <p id="thank-you-message"></p>
+            </div>
+        </div>
     </div>
-  </div>
+  
 </body>
 
 </html>
