@@ -300,6 +300,19 @@ h2{
     color: white;
   }
 
+  /* Thank you for modal  */
+
+  .thank-you-message{
+    width: 504px;
+height: 120px;
+left: 50px;
+top: 789px;
+
+background: #ECFDF5;
+border-radius: 3px;
+  }
+
+
 
   /* Styles for mobile devices */
 
