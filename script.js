@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function() {
       setTimeout(function() {
         thankYouModal.style.display = "none";
         location.reload();
-      }, 3000);
+      }, 2000);
     });
   
     const closeBtns = document.querySelectorAll(".close");

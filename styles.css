@@ -259,6 +259,7 @@ h2{
     border: 1px solid #888;
     width: 80%;
     max-width: 400px;
+    background-color: rgb(171, 194, 247);
   }
   
   .close {
@@ -302,14 +303,10 @@ h2{
 
   /* Thank you for modal  */
 
-  .thank-you-message{
-    width: 504px;
-height: 120px;
-left: 50px;
-top: 789px;
-
-background: #ECFDF5;
-border-radius: 3px;
+  #thank-you-message{
+    font-family: 'Smythe';
+    font-size: 28px;
+    line-height: 17px;
   }
 
 
