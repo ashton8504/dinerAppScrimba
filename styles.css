@@ -173,3 +173,37 @@ h2{
     border: none;
     font-size: 20px;
 }
+
+#order-list {
+    list-style: none;
+}
+
+/* .item-name {
+    position: absolute;
+    width: 43px;
+    height: 17px;
+    left: 46px;
+    top: 870px;
+    font-family: 'Smythe';
+    font-size: 20px;
+    line-height: 17px;
+    padding-right: 120px;
+}
+
+
+.remove-button{
+    width: 77px;
+    height: 22px;
+    left: 102px;
+    top: 868px;
+
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+
+    
+    
+    color: #BBBBBB;
+} */
