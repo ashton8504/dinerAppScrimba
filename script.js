@@ -1,6 +1,20 @@
 // Import the menuArray from data.js
 import { menuArray } from './data.js';
 const menu = document.getElementById("menu");
+const completeOrderBtn = document.getElementById('complete-order-btn');
+const modal = document.getElementById('modal');
+const closeBtn = document.querySelector('.close');
+
+completeOrderBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+
+function openModal() {
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
 
 function getMenuItems() {
     let menuFeed = '';

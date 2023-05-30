@@ -31,6 +31,7 @@
             <div id="menu">
                 <!-- Menu Here -->
             </div>
+
             <!-- Adds Menu Items -->
             <div id="your-order" style="display: none;">
                 <h2>Your Order</h2>
@@ -39,10 +40,24 @@
                 <div class="total-price">
                   Total: $<span id="total-price-amount">0</span>
                 </div>
-                <button id="complete-order-btn">Complete Your Order</button>
+                <button id="complete-order-btn">Complete Order</button>
             </div>
               
-              
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form id="order-form">
+                    <label for="name">Enter Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="card-number">Enter Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" required>
+                    <label for="cvv">Enter CVV:</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                    <button type="submit" id="pay-button">Pay</button>
+                  </form>
+                </div>
+            </div>
               
         </div>
     </div>
