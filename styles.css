@@ -362,12 +362,20 @@ h2{
 /* Styles for mobile devices */
 @media only screen and (max-width: 600px) {
     body {
-      display: block;
-      height: auto;
-      max-width: none;
-      margin: 0;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
     
+      .app-container {
+        width: calc(100% - 40px); /* Subtract the desired padding from the width */
+        max-width: 500px;
+        background-color: #FFF; /* Add a background color */
+        border: 10px solid #000;
+        border-radius: 10px;
+        padding: 20px;
+      }
     .titleText {
       padding-right: 0;
       padding-top: 0;
