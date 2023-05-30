@@ -299,3 +299,43 @@ h2{
     border-radius: 3.88991px;
     color: white;
   }
+
+
+  /* Styles for mobile devices */
+
+  @media only screen and (max-width: 600px) {
+    body {
+      display: block;
+      height: auto;
+      max-width: none;
+      margin: 0;
+    }
+    
+    .titleText {
+      padding-right: 0;
+      padding-top: 0;
+    }
+    
+    .titleSlogan {
+      padding-right: 0;
+      padding-top: 0;
+    }
+    
+    .menu {
+      margin-top: 20px;
+    }
+    
+    .item-name,
+    .ingredients,
+    .price,
+    .add-to-order {
+      width: auto;
+      left: auto;
+      top: auto;
+    }
+    
+    #complete-order-btn {
+      width: 100%;
+    }
+  }
+  
