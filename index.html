@@ -1,67 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
-    <!-- CSS & JavaScript Links -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer type="module"></script>
-    <script src="data.js" type="module" defer></script>
-    <title>Jimmy's Diner</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+  <!-- CSS & JavaScript Links -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer type="module"></script>
+  <script src="data.js" type="module" defer></script>
+  <title>Jimmy's Diner</title>
 </head>
-<body>
-    <div class="phone-frame">
-        <div class="content">
-            <!-- Header Section -->
-            <header>
-                <img class="item-img" src="diner.jpeg" alt="photo of a burger">
-                <div class="header-content">
-                    <h1 class="titleText">Jimmy's Diner</h1>
-                    <h4 class="titleSlogan">The best burgers and pizza in town</h4>
-                </div>
-            </header>
-    
-            <!-- Menu -->
-            <div id="menu">
-                <!-- Menu Here -->
-            </div>
 
-            <!-- Adds Menu Items -->
-            <div id="your-order" style="display: none;">
-                <h2>Your Order</h2>
-                <ul id="order-list" class="order-list"></ul>
-                <div class="order-line"></div>
-                <div class="total-price">
-                  Total: $<span id="total-price-amount">0</span>
-                </div>
-                <button id="complete-order-btn">Complete Order</button>
-            </div>
-              
-            <!-- Modal -->
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <form id="order-form">
-                    <label for="name">Enter Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="card-number">Enter Card Number:</label>
-                    <input type="text" id="card-number" name="card-number" required>
-                    <label for="cvv">Enter CVV:</label>
-                    <input type="text" id="cvv" name="cvv" required>
-                    <button type="submit" id="pay-button">Pay</button>
-                  </form>
-                </div>
-            </div>
-              
+<body>
+  <div class="phone-frame">
+    <div class="content">
+      <!-- Header Section -->
+      <header>
+        <img class="item-img" src="diner.jpeg" alt="photo of a burger">
+        <div class="header-content">
+          <h1 class="titleText">Jimmy's Diner</h1>
+          <h4 class="titleSlogan">The best burgers and pizza in town</h4>
         </div>
+      </header>
+
+      <!-- Menu -->
+      <div id="menu">
+        <!-- Menu Here -->
+      </div>
+
+      <!-- Adds Menu Items -->
+      <div id="your-order" style="display: none;">
+        <h2>Your Order</h2>
+        <ul id="order-list" class="order-list"></ul>
+        <div class="order-line"></div>
+        <div class="total-price">
+          Total: $<span id="total-price-amount">0</span>
+        </div>
+        <button id="complete-order-btn">Complete Order</button>
+      </div>
+
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 class="modal-header">Enter Card Details</h2>
+          <form id="order-form">
+            <div class="input-group">
+              <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="input-group">
+              <input type="text" id="card-number" name="card-number" placeholder="Enter Card Number" required>
+            </div>
+            <div class="input-group">
+              <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+            </div>
+            <button type="submit" id="pay-button" class="pay-button">Pay</button>
+          </form>
+        </div>
+      </div>
     </div>
-    
-    
+  </div>
 </body>
+
 </html>
