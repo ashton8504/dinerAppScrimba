@@ -14,8 +14,6 @@
   .app-container {
     width: calc(100% - 40px); /* Subtract the desired padding from the width */
     max-width: 500px;
-    
-    
     background-color: #FFF; /* Add a background color */
     border: 10px solid #000;
     border-radius: 10px;
@@ -361,11 +359,40 @@ h2{
   
   /* Media Query for thank you message */
 
-  @media (max-width: 767px) {
-    #thank-you-message {
-      font-family: 'Smythe';
-      font-size: 18px;
-      line-height: 24px;
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+    body {
+      display: block;
+      height: auto;
+      max-width: none;
+      margin: 0;
+    }
+    
+    .titleText {
+      padding-right: 0;
+      padding-top: 0;
+    }
+    
+    .titleSlogan {
+      padding-right: 0;
+      padding-top: 0;
+    }
+    
+    .menu {
+      margin-top: 20px;
+    }
+    
+    .item-name,
+    .ingredients,
+    .price,
+    .add-to-order {
+      width: auto;
+      left: auto;
+      top: auto;
+    }
+    
+    #complete-order-btn {
+      width: 100%;
     }
   }
   
